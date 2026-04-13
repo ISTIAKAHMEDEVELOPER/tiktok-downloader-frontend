@@ -572,7 +572,9 @@ async function handleDownload(){
     const list=fmts.length?fmts.slice(0,3):[{url:data.url,quality:'Best',ext:fmt}];
     list.forEach(f=>{
       const a=document.createElement('a');
-      a.href=f.url;a.target='_blank';a.rel='noopener noreferrer';
+      a.href=`https://tiktok-downloader-api-xcob.onrender.com/api/proxy?url=${encodeURIComponent(f.url)}`;
+      a.download=f.ext==='mp3'?'tiksave-audio.mp3':'tiksave-video.mp4';
+      a.rel='noopener noreferrer';
       const isMP3=f.ext==='mp3'||tab==='mp3';
       a.className='btn-dl '+(isMP3?'btn-mp3':'btn-mp4');
       a.innerHTML=isMP3?
