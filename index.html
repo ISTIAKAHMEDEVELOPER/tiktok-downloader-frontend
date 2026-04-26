@@ -349,6 +349,8 @@ nav{
 .nav-link:focus-visible{outline:2px solid var(--red);border-radius:20px}
 .nav-link.cta{background:var(--red3);color:#fff;border-color:var(--red3)}
 .nav-link.cta:hover{background:var(--red2);border-color:var(--red2)}
+.nav-link.blog{border-color:rgba(37,244,238,.35);color:var(--teal);background:rgba(37,244,238,.06)}
+.nav-link.blog:hover{border-color:var(--teal);color:#d8fffd;background:rgba(37,244,238,.12)}
 
 /* ─ HERO ─ */
 .hero{
@@ -791,10 +793,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 20p
     <span class="logo-tik">Download</span><span class="logo-save">TT</span><span class="logo-dot" aria-hidden="true"></span>
   </a>
   <div class="nav-right">
-    <a href="#how-to" class="nav-link">How To</a>
-    <a href="#features" class="nav-link">Features</a>
-    <a href="#faq" class="nav-link">FAQ</a>
-    <a href="#downloader" class="nav-link cta">↓ Download</a>
+    <a href="/blog" class="nav-link blog">Blog</a>
+    <a href="/#downloader" class="nav-link cta">↓ Download</a>
   </div>
 </nav>
 
@@ -1417,4 +1417,6 @@ if ('IntersectionObserver' in window) {
 </script>
 </body>
 </html>
+
+
 

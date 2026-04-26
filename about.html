@@ -115,6 +115,8 @@ nav{
 .nav-link:focus-visible{outline:2px solid var(--red);border-radius:20px}
 .nav-link.cta{background:var(--red3);color:#fff;border-color:var(--red3)}
 .nav-link.cta:hover{background:var(--red2);border-color:var(--red2)}
+.nav-link.blog{border-color:rgba(37,244,238,.35);color:var(--teal);background:rgba(37,244,238,.06)}
+.nav-link.blog:hover{border-color:var(--teal);color:#d8fffd;background:rgba(37,244,238,.12)}
 .page{max-width:980px;margin:0 auto;padding:clamp(60px,8vw,80px) clamp(16px,4vw,20px);position:relative;z-index:1}
 .page-label{display:inline-flex;align-items:center;gap:6px;color:var(--red);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
 .page-label::before{content:'';width:16px;height:1px;background:var(--red)}
@@ -164,9 +166,7 @@ nav{
     <span class="logo-tik">Download</span><span class="logo-save">TT</span><span class="logo-dot" aria-hidden="true"></span>
   </a>
   <div class="nav-right">
-    <a href="/#how-to" class="nav-link">How To</a>
-    <a href="/#features" class="nav-link">Features</a>
-    <a href="/#faq" class="nav-link">FAQ</a>
+    <a href="/blog" class="nav-link blog">Blog</a>
     <a href="/#downloader" class="nav-link cta">↓ Download</a>
   </div>
 </nav>
@@ -232,6 +232,8 @@ We continuously improve design, speed, and compatibility so users always get the
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
+
 
 
 
