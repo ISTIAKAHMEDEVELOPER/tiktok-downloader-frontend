@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Block non-public technical paths
+Disallow: /cdn-cgi/
+Disallow: /_worker/
+Disallow: /api/private/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Allow assets needed for rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff$
+Allow: /*.woff2$
+
+# Important for ad crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+Sitemap: https://downloadtt.me/sitemap.xml
