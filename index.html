@@ -119,7 +119,7 @@
   --red:#fe2c55;--red2:#ee1d52;--red3:#c7102e;
   --teal:#25f4ee;--teal2:#00c8c0;
   --bg:#070709;--bg2:#0e0e12;--bg3:#16161c;--bg4:#1e1e26;--bg5:#26262f;
-  --text:#f0f0f5;--text2:#9898aa;--text3:#55555f;
+  --text:#f0f0f5;--text2:#9898aa;--text3:#8888a0;
   --border:#22222c;--border2:#2e2e3a;
   --radius:16px;--radius-lg:24px;--radius-sm:10px
 }
@@ -167,7 +167,7 @@ nav{
 .nav-right{display:flex;align-items:center;gap:8px}
 .nav-link{color:var(--text2);text-decoration:none;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;border:1px solid transparent;transition:all .2s}
 .nav-link:hover{color:var(--text);border-color:var(--border2);background:var(--bg3)}
-.nav-link.cta{background:var(--red);color:#fff;border-color:var(--red)}
+.nav-link.cta{background:var(--red3);color:#fff;border-color:var(--red3)}
 .nav-link.cta:hover{background:var(--red2);border-color:var(--red2)}
 
 /* ─── HERO ─── */
@@ -202,7 +202,7 @@ nav{
 /* ─── ANIMATED TICKER ─── */
 .ticker-wrap{overflow:hidden;width:100%;margin-bottom:36px;animation:fadeInUp .6s ease .35s both}
 .ticker{display:flex;gap:24px;animation:ticker 25s linear infinite;white-space:nowrap;width:max-content}
-.ticker-item{display:flex;align-items:center;gap:6px;color:var(--text3);font-size:12px;font-weight:500;padding:5px 14px;border:1px solid var(--border);border-radius:20px;background:var(--bg2);flex-shrink:0}
+.ticker-item{display:flex;align-items:center;gap:6px;color:var(--text2);font-size:12px;font-weight:500;padding:5px 14px;border:1px solid var(--border);border-radius:20px;background:var(--bg2);flex-shrink:0}
 .ticker-item svg{color:var(--red);flex-shrink:0}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
@@ -255,7 +255,7 @@ nav{
 
 /* ─── TRUST PILLS ─── */
 .trust{display:flex;justify-content:center;gap:12px;margin-top:20px;flex-wrap:wrap}
-.trust-pill{display:flex;align-items:center;gap:5px;color:var(--text3);font-size:12px;font-weight:500;padding:5px 12px;border:1px solid var(--border);border-radius:20px;background:rgba(255,255,255,.02)}
+.trust-pill{display:flex;align-items:center;gap:5px;color:var(--text2);font-size:12px;font-weight:500;padding:5px 12px;border:1px solid var(--border);border-radius:20px;background:rgba(255,255,255,.02)}
 .trust-pill svg{width:12px;height:12px;color:#22c55e}
 
 /* ─── LOADING ─── */
@@ -411,9 +411,9 @@ nav{
 /* ─── FOOTER ─── */
 footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 20px;text-align:center;position:relative;z-index:1}
 .footer-links{display:flex;justify-content:center;gap:6px;margin-bottom:20px;flex-wrap:wrap}
-.footer-links a{color:var(--text3);text-decoration:none;font-size:13px;font-weight:500;padding:5px 12px;border-radius:20px;transition:all .2s}
+.footer-links a{color:var(--text2);text-decoration:none;font-size:13px;font-weight:500;padding:5px 12px;border-radius:20px;transition:all .2s}
 .footer-links a:hover{color:var(--text2);background:var(--bg3)}
-.footer-copy{color:var(--text3);font-size:12px;line-height:1.7}
+.footer-copy{color:var(--text2);font-size:12px;line-height:1.7}
 
 /* ─── ANIMATIONS ─── */
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
