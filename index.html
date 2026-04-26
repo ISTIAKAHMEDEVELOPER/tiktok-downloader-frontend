@@ -742,17 +742,23 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 20p
 <!-- FOOTER -->
 <footer>
   <div class="footer-links">
-    <a href="/">Home</a>
-    <a href="#downloader">TikTok Downloader</a>
-    <a href="#how-to">How To Download</a>
-    <a href="#features">Features</a>
-    <a href="#faq">FAQ</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Contact</a>
+    <a href="/about.html">About Us</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+    <a href="/disclaimer.html">Disclaimer</a>
   </div>
-  <p class="footer-copy">© 2026 DownloadTT — Free TikTok Video Downloader Without Watermark | Fast TikTok MP4 & MP3 Saver<br>Not affiliated with TikTok or ByteDance Ltd. For personal use only.</p>
+
+  <p class="footer-copy">
+    © <span id="year"></span> DownloadTT — Free TikTok Video Downloader Without Watermark
+    <br>
+    Not affiliated with TikTok or ByteDance Ltd. For personal and lawful use only.
+  </p>
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <script>
 /* ─── CONFIG ─── */
